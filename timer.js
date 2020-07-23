@@ -1,6 +1,11 @@
+let Ttime = 70; //time should be in seconds
+let time = Ttime;
 $(document).ready(function(){
-    let time = 70; //this should always be in seconds
     let timer = $('#timer');
+    let t=`${Math.floor(time/60)}:`;
+    if(time%60<10)t+=`0`;
+    t+=`${time%60}`;
+    timer.text(t);
     let setTime;
     $('#inputText').on('keydown', function(){
         setTime = setInterval(decTime,1000);
@@ -11,11 +16,17 @@ $(document).ready(function(){
             timer.text(`  Time over !!!`);
             $('#end').click();
         }
-        else timer.text(`${Math.floor(time/60)}m : ${Math.floor(time%60)}s`);
+        else{
+            t=`${Math.floor(time/60)}:`;
+            if(time%60<10)t+=`0`;
+            t+=`${time%60}`;
+            timer.text(t);
+        }
     }
-
     //End button
     $('#end').click(function(){
         clearInterval(setTime);
     });
+
+    // Ttime = Total Time ,  time = remaining time , Ttime - time = elapsed time
 });
