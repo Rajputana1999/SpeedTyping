@@ -1,4 +1,4 @@
-let Ttime = 70; //time should be in seconds
+let Ttime = 60; //time should be in seconds
 let time = Ttime;
 $(document).ready(function(){
     let timer = $('#timer');
@@ -7,9 +7,8 @@ $(document).ready(function(){
     t+=`${time%60}`;
     timer.text(t);
     let setTime;
-    $('#inputText').on('keydown', function(){
+    $('#inputText').one('keypress', function(){
         setTime = setInterval(decTime,1000);
-        $(this).off('keydown');
     });
     function decTime(){
         if(--time < 0){
