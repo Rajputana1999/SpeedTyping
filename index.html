@@ -3,25 +3,27 @@
 <html>
     <head>
         <title>Speed Typing</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="text.js"></script>
         <script src="timer.js"></script>
         <script src="typing.js"></script>
         <script src="wpm.js"></script>
         <script src="accuracy.js"></script>
-        <!--script src="chngBack.js"></script-->
-        <!--link rel="stylesheet" type="text/css" href="style.css"-->
+        <script src="scroll.js"></script>
+        <!--script src="chngBack.js"></script   ↩   -->
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="box"><div id="text">This paragraph is for Speed typing and if every thing is working fine or not.</div>
-        <br>
-        <input type="text" id="inputText" value="" placeholder="Press any key to start test..." size="100" >
-        <span id="errorText"></span>
-        </div>
-        <h1 id="timer"></h1>
-        <h1 id="wpm"></h1>
-        <h1 id="accuracy"></h1>
-        <!-- if user wants for end/Submit the test explicitly-->
+        <div id="container">
+            <span class="top" id="timer"></span>
+            <span class="top" id="wpm"></span>
+            <span class="top" id="accuracy"></span>
+            <p id="box">This paragraph is for Speed typing and if every thing is working fine or not.</p>
+            <textarea rows="3" id="inputText" value="" placeholder="Press any key to start test..." autofocus 
+                spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
+        </div><!-- if user wants for end/Submit the test explicitly-->
         <a href="result.html"><button id="end">End Test</button></a>
     </body>
 </html>

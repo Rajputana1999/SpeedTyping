@@ -1,9 +1,10 @@
-let errors = 0, keystrokes = 0, text;
+let errors = 0, keystrokes = 0;
 $(document).ready(function(){
-    text = $('#text').text(); //Text to be typed
+    text = boxText; //Text to be typed
+    $("#box").text(boxText);
     let input = $('#inputText');
     input.val('');
-    console.log(text);
+    // console.log(text);
     let index,lastKey=' ',key;
     let $inputResponse = input.keypress(function(){
         index = input.val().length;  /// entered key is not present in input.val() at this moment
@@ -18,13 +19,11 @@ $(document).ready(function(){
             $('#errorText').empty();
         }
         else{
-            $('#errorText').html("<span style='color:tomato'>You mistyped</span>");
             errors++;
-            console.log(`err & keys : ${errors}, ${keystrokes}`);
+            // console.log(`err & keys : ${errors}, ${keystrokes}`);
         }
         lastKey=key;
         if(index == text.length-1){
-            $('#errorText').html(`<span style='color:blue'>Completed</span><span style='color:tomato'> Errors : ${errors}</span>` );
             $('#end').click();
         }
     });
