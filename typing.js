@@ -15,7 +15,7 @@ $(document).ready(function(){
             input.val(`${input.val().slice(0,-1)}`);
             keystrokes--;
         }
-        else if(key===text[index]){
+        else if(key>=text[index]){
             $('#errorText').empty();
         }
         else{

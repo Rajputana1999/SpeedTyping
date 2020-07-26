@@ -1,17 +1,25 @@
 body{
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-image: url('bg/bg0.jpg');
 }
 
 #box{
-    border: 1px solid grey;
+    border: 1px solid blue;
     border-radius: 10px 0px;
-    box-shadow: 3px 3px 5px grey inset, -3px -3px 5px grey inset;
+    box-shadow: 3px 3px 5px blue inset, -3px 0px 5px blue inset;
     padding: 15px;
     margin: auto;
     overflow: auto;
     height: 200px;
     text-align: left;
-    font-family: serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    overflow: hidden;
 }
 #container{
     width: 50%;
@@ -21,11 +29,15 @@ body{
 #inputText{
     width: 96%;
     height: 5em;
+    border: 1px solid blue;
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
     resize: none;
     margin-top: 0px;
-    font-family: serif;
+    font-family: 'Courier New', Courier, monospace;
     padding: 15px;
-    box-shadow: 3px 3px 3px grey inset, -3px -3px 5px grey inset;
+    box-shadow: 3px 3px 3px blue inset, -3px -3px 5px blue inset;
+}
+.top{
+    color: burlywood;
 }

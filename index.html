@@ -17,12 +17,13 @@
     </head>
     <body>
         <div id="container">
-            <span class="top" id="timer"></span>
-            <span class="top" id="wpm"></span>
-            <span class="top" id="accuracy"></span>
+            <span class="top">Time Left: <span id="timer"></span></span>
+            <span class="top">Speed: <span id="wpm"></span></span>
+            <span class="top">Accuracy: <span id="accuracy"></span></span>
             <p id="box">This paragraph is for Speed typing and if every thing is working fine or not.</p>
             <textarea rows="3" id="inputText" value="" placeholder="Press any key to start test..." autofocus 
-                spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"></textarea>
+                spellcheck="false" autocapitalize=off autocomplete=off autocorrect=off
+                onpaste="return false" ondrag="return false" ondrop="return false"></textarea>
         </div><!-- if user wants for end/Submit the test explicitly-->
         <a href="result.html"><button id="end">End Test</button></a>
     </body>
