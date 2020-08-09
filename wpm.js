@@ -10,12 +10,12 @@ $(document).ready(function(){
         wpm.text(`${Math.floor((input.val().length/(5*((Ttime-time)/60))+0.5))}`);
     }
 
-    // calculating final WPM
-    let finalErrors=0;
-    for(let i=0; i<input.val().length; i++){
-        if(input.val()[i]!=text[i])finalErrors++;
-    }
     $('#end').click(function(){
+        // calculating final WPM
+        let finalErrors=0;
+        for(let i=0; i<input.val().length; i++){
+            if(input.val()[i]!=text[i])finalErrors++;
+        }
         clearInterval(setWpm);
         sessionStorage.wpm=Math.floor(0.5+(input.val().length-finalErrors)/(5*((Ttime-time)/60)));
     });
