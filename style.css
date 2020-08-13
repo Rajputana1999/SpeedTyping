@@ -11,7 +11,7 @@ body{
 #box{
     border: 1px solid darkblue;
     border-radius: 20px 20px 0px 0px;
-    box-shadow: 3px 3px 5px darkblue inset, -3px 0px 5px darkblue inset;
+    box-shadow: 5px 5px 7px darkblue inset, -4px 0px 7px darkblue inset;
     padding: 15px;
     margin: auto;
     overflow: auto;
@@ -36,7 +36,7 @@ body{
     margin-top: 0px;
     font-family: 'Courier New', Courier, monospace;
     padding: 15px;
-    box-shadow: 3px 3px 3px darkblue inset, -3px -3px 5px darkblue inset;
+    box-shadow: 5px 5px 7px darkblue inset, -5px -5px 7px darkblue inset;
 }
 .stats-block{
     margin-top: 6em;
@@ -45,7 +45,7 @@ body{
 }
 .stats{
     border: 1px solid darkblue;
-    box-shadow: 3px 3px 3px darkblue inset, -3px -3px 5px darkblue inset;
+    box-shadow: 5px 5px 7px darkblue inset, -5px -5px 7px darkblue inset;
     font-size: 2em;
     background-color: white;
     border-radius: 10px;
