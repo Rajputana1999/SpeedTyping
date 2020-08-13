@@ -9,9 +9,9 @@ body{
 }
 
 #box{
-    border: 1px solid blue;
-    border-radius: 10px 0px;
-    box-shadow: 3px 3px 5px blue inset, -3px 0px 5px blue inset;
+    border: 1px solid darkblue;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 3px 3px 5px darkblue inset, -3px 0px 5px darkblue inset;
     padding: 15px;
     margin: auto;
     overflow: auto;
@@ -22,22 +22,33 @@ body{
     overflow: hidden;
 }
 #container{
-    width: 50%;
     margin: auto;
     margin-top: 10%;
+    width:50%;
 }
 #inputText{
     width: 96%;
     height: 5em;
-    border: 1px solid blue;
-    border-radius: 0px 0px 10px 10px;
+    border: 1px solid darkblue;
+    border-radius: 0px 0px 20px 20px;
     overflow: hidden;
     resize: none;
     margin-top: 0px;
     font-family: 'Courier New', Courier, monospace;
     padding: 15px;
-    box-shadow: 3px 3px 3px blue inset, -3px -3px 5px blue inset;
+    box-shadow: 3px 3px 3px darkblue inset, -3px -3px 5px darkblue inset;
 }
-.top{
-    color: burlywood;
+.stats-block{
+    margin-top: 6em;
+    display: inline-block;
+    width:50%;
+}
+.stats{
+    border: 1px solid darkblue;
+    box-shadow: 3px 3px 3px darkblue inset, -3px -3px 5px darkblue inset;
+    font-size: 2em;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    width: 30%;
 }

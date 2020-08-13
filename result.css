@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-image: url('bg/bg0.jpg');
+}
+
+#box{
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 10px darkblue inset, -3px 0px 5px darkblue inset;
+    padding: 2em;
+    margin: auto;
+    overflow: auto;
+    height: 200px;
+    text-align: left;
+    font-style: italic;
+    background-color: white;
+    overflow: hidden;
+}
+#container{
+    margin: auto;
+    margin-top: 10%;
+    width:50%;
+}
