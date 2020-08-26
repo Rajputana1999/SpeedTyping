@@ -1,4 +1,12 @@
 let texts=[
-    `In normal BFS of a graph all edges have equal weight but in 0-1 BFS some edges may have 0 weight and some may have 1 weight. In this we will not use bool array to mark visited nodes but at each step we will check for the optimal distance condition. We use double ended queue to store the node. While performing BFS if a edge having weight = 0 is found node is pushed at front of double ended queue and if a edge having weight = 1 is found, it is pushed at back of double ended queue.`
-];
+    `I declare this world is so beautiful that I can hardly believe it exists.”  The beauty of nature can have a profound effect upon our senses, those gateways from the outer world to the inner, whether it results in disbelief in its very existence as Emerson notes, or feelings such as awe, wonder, or amazement.  But what is it about nature and the entities that make it up that cause us, oftentimes unwillingly, to feel or declare that they are beautiful?
+
+    One answer that Emerson offers is that “the simple perception of natural forms is a delight.”  When we think of beauty in nature, we might most immediately think of things that dazzle the senses – the prominence of a mountain, the expanse of the sea, the unfolding of the life of a flower.  Often it is merely the perception of these things itself which gives us pleasure, and this emotional or affective response on our part seems to be crucial to our experience of beauty.  So in a way there is a correlate here to the intrinsic value of nature; Emerson says:
+    the sky, the mountain, the tree, the animal, give us a delight in and for themselves
+    Most often, it seems to me, we find these things to be beautiful not because of something else they might bring us – a piece of furniture, say, or a ‘delicacy’ to be consumed – but because of the way that the forms of these things immediately strike us upon observation. In fact, one might even think that this experience of beauty is one of the bases for valuing nature – nature is valuable because it is beautiful.
+
+    Emerson seems to think that beauty in the natural world is not limited to certain parts of nature to the exclusion of others. He writes that every landscape lies under “the necessity of being beautiful”, and that “beauty breaks in everywhere.”  As we slowly creep out of a long winter in the Northeast, I think Emerson would find the lamentations about what we have ‘endured’ to be misguided:
+    The inhabitants of the cities suppose that the country landscape is pleasant only half the year….To the attentive eye, each moment of the year has its own beauty, and in the same field it beholds, every hour, a picture which was never seen before, and which shall never be seen again.
+    `];
 let boxText=texts[0];
+console.log(boxText.length);
